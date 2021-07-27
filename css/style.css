@@ -1,0 +1,145 @@
+:root{
+    --dark-blue: hsl(240, 38%, 20%);
+    --grayish-blue: hsl(240, 18%, 77%);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small */
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+
+/* medium */
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+
+/* large */
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+
+.container .person{
+    padding-top: 50px;
+    position: relative;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.container .person .para-person{
+    position: absolute;
+    width: 60%;
+    margin-left: -60px;
+    z-index: 4;
+}
+.container .person .para-person img.quotes{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 110px;
+}
+.container .person .para-person .text{
+    line-height: 1.8;
+    margin-top: 170px;
+    
+}
+.container .person .para-person .name-person{
+    margin-top: 40px;
+}
+.container .person .para-person .name-person span{
+    color: var(--grayish-blue);
+}
+.container .person .im-person{
+  margin-left: 500px;
+  margin-top: 20px;
+}
+.container .person .im-person img.person{
+    position: absolute;
+    margin-top: -60px;
+  
+}
+@media (max-width: 992px){
+    .container .person .im-person{
+        margin-left: 0px;
+    }
+    .container .person .para-person{
+        width: 100%;
+        margin-top: 600px;
+        margin-left: 20px;
+    }
+    .container .person .para-person p{
+        text-align: center;
+    }
+}
+.container .person .im-person img.back{
+    position: absolute;
+    margin-top: -60px;
+    margin-left: -80px;
+}
+.container .person .im-person .slice{
+    width: 100px;
+    height: 50px;
+    background: white;
+    border-radius: 40px;
+    position: absolute;
+    margin-top: 510px;
+    margin-left: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+@media (max-width: 992px){
+    .container .person .im-person .slice{
+        margin-left: 200px;
+    }
+    .container .person .para-person .name-person{
+        margin-top: 20px;
+        line-height: 1.4;
+    }
+    .container .person .para-person span{
+        display: block
+    };
+}
+.container .person .im-person .slice::after{
+    content: url(../images/icon-next.svg);
+    margin-left: 70px;
+    position: absolute;
+    margin-top: 5px;
+}
+.container .person .im-person .slice::before{
+    content: url(../images/icon-prev.svg);
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 15px;
+}
