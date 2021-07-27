@@ -108,7 +108,7 @@ body{
     margin-top: -60px;
     margin-left: -80px;
 }
-.container .person .im-person .slice{
+.container .person .im-person .slide{
     width: 100px;
     height: 50px;
     background: white;
@@ -120,7 +120,7 @@ body{
     user-select: none;
 }
 @media (max-width: 992px){
-    .container .person .im-person .slice{
+    .container .person .im-person .slide{
         margin-left: 200px;
     }
     .container .person .para-person .name-person{
@@ -131,13 +131,13 @@ body{
         display: block
     };
 }
-.container .person .im-person .slice::after{
+.container .person .im-person .slide::after{
     content: url(../images/icon-next.svg);
     margin-left: 70px;
     position: absolute;
     margin-top: 5px;
 }
-.container .person .im-person .slice::before{
+.container .person .im-person .slide::before{
     content: url(../images/icon-prev.svg);
     position: absolute;
     margin-top: 5px;
