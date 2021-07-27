@@ -1,4 +1,4 @@
-let move = document.querySelector(".slice");
+let move = document.querySelector(".slide");
 let person = document.querySelectorAll("div.person");
 console.log(person);
 document.addEventListener("click", (event) => {
